@@ -1,0 +1,29 @@
+Javascript Executor:
+
+1) ScrollintoView
+2) Sendkeys
+3) Click
+4) Scrollby (0,1000)
+5) Highlighting Webelement Borders
+
+
+
+--- We have to create a Webelement obect Reference:
+
+WebElement Element = findElement(By.(id))
+
+---------------------------------------------------------------------------------
+Create Object reference for Javascript Executor
+
+JavascriptExecutor js = (JavascriptExecutor)driver;		
+js.executeScript("arguments[0].scrollIntoView();", Element);
+
+---------------------------------------------------------------------------------
+SendKeys and Click:
+
+ JavascriptExecutor js = (JavascriptExecutor)driver;	
+       
+       
+ js.executeScript("arguments[0].setAttribute('value','Admin')", username); --- SendKeys
+ js.executeScript("arguments[0].setAttribute('value','admin123')", password); - SendKeys
+ js.executeScript("arguments[0].click();", button);  --- Click
