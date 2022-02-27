@@ -33,7 +33,7 @@ Java.......
 
 
 
-prodcut ---------->coverages(),premium(),contact();
+product ---------->coverages(),premium(),contact();
 
 
 Product P1= new MarineProduct();
@@ -159,14 +159,7 @@ interface B{
 
 }
 
-class C implements A,B
-{
-
-}
-
-
-
-==================================================================================
+class C implements A
 
 
 
